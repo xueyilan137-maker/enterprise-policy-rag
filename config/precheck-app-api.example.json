@@ -1,0 +1,5 @@
+{
+  "api_base": "http://127.0.0.1:18080/v1",
+  "app_id": "REPLACE_WITH_YOUR_WORKFLOW_APP_ID",
+  "api_key": "REPLACE_WITH_YOUR_WORKFLOW_API_KEY"
+}

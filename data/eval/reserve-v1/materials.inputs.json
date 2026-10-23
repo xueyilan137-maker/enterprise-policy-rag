@@ -1,0 +1,58 @@
+[
+  {
+    "id": "A01",
+    "scenario_group": "mixed_lodging_rail_v1",
+    "narrative": "# 原创合成申请 A01\n\n出发日期：2026-02-10。\n返程日期：2026-02-12。\n提交日期：2026-02-20。\n目的地：广州。\n事由：项目现场交接。\n申请总额：1360.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA01-H,lodging,1000.00,2026-02-10,SYN-A01-H,true,,2026-02-10,2026-02-12,2,,,\r\nA01-T,transit,360.00,2026-02-10,SYN-A01-T,true,,,,,佛山至广州,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A02",
+    "scenario_group": "B_lodging_cent_over_three_nights",
+    "narrative": "# 原创合成申请 A02\n\n出发日期：2026-11-03。\n返程日期：2026-11-06。\n提交日期：2026-11-12。\n目的地：武汉。\n事由：项目现场交接。\n申请总额：1200.01元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA02-H,lodging,1200.01,2026-11-03,SYN-A02-H,true,,2026-11-03,2026-11-06,3,,,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A03",
+    "scenario_group": "rail_upgrade_missing_approval",
+    "narrative": "# 原创合成申请 A03\n\n出发日期：2026-11-10。\n返程日期：2026-11-11。\n提交日期：2026-11-15。\n目的地：南京。\n事由：项目现场交接。\n申请总额：880.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA03-T,transit,880.00,2026-11-10,SYN-A03-T,true,,,,,苏州至南京,高铁一等座,false\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A04",
+    "scenario_group": "economy_missing_receipt",
+    "narrative": "# 原创合成申请 A04\n\n出发日期：2026-03-12。\n返程日期：2026-03-13。\n提交日期：2026-03-18。\n目的地：青岛。\n事由：项目现场交接。\n申请总额：710.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA04-T,transit,710.00,2026-03-12,,false,,,,,济南至青岛,经济舱,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A05",
+    "scenario_group": "submission_before_end_extraction_gate",
+    "narrative": "# 原创合成申请 A05\n\n出发日期：2026-09-07。\n返程日期：2026-09-09。\n提交日期：2026-09-08。\n目的地：厦门。\n事由：项目现场交接。\n申请总额：260.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA05-T,transit,260.00,2026-09-07,SYN-A05-T,true,,,,,泉州至厦门,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A06",
+    "scenario_group": "same_receipt_across_categories",
+    "narrative": "# 原创合成申请 A06\n\n出发日期：2026-10-05。\n返程日期：2026-10-06。\n提交日期：2026-10-10。\n目的地：合肥。\n事由：项目现场交接。\n申请总额：270.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA06-T,transit,200.00,2026-10-05,SYN-A06-SAME,true,,,,,芜湖至合肥,高铁二等座,\r\nA06-M,meal,70.00,2026-10-05,SYN-A06-SAME,true,false,,,,,,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A07",
+    "scenario_group": "city_not_proof_of_region",
+    "narrative": "# 原创合成申请 A07\n\n出发日期：2026-12-15。\n返程日期：2026-12-16。\n提交日期：2026-12-20。\n目的地：杭州。\n事由：项目现场交接。\n申请总额：300.00元。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA07-T,transit,300.00,2026-12-15,SYN-A07-T,true,,,,,湖州至杭州,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "A08",
+    "scenario_group": "two_explicit_totals_conflict",
+    "narrative": "# 原创合成申请 A08\n\n出发日期：2026-08-18。\n返程日期：2026-08-19。\n提交日期：2026-08-22。\n目的地：福州。\n事由：项目现场交接。\n申请总额：370.00元。\n行程范围为中国大陆。\n申报总额：380.00元。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nA08-T,transit,380.00,2026-08-18,SYN-A08-T,true,,,,,宁德至福州,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  }
+]

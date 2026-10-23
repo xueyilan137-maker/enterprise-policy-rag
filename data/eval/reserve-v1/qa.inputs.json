@@ -1,0 +1,67 @@
+[
+  {
+    "id": "Q01",
+    "scenario_group": "rail_vs_lodging_cap",
+    "turns": [
+      "2026-02-18出发，高铁二等座车票620元，能按住宿每晚500元的标准压减车票金额吗？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q02",
+    "scenario_group": "provided_meal_missing_evidence",
+    "turns": [
+      "2026-09-14出发，单位已经提供午餐，另外申报当天餐费但没有凭证，还需要补充什么说明和材料？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q03",
+    "scenario_group": "actual_nights_and_submission",
+    "turns": [
+      "2026-04-16出发的行程，住宿应按实际夜数还是差旅天数算？行程结束后最迟多少个自然日提交？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q04",
+    "scenario_group": "foreign_city_default_exclusion",
+    "turns": [
+      "2026-11-02出发去巴黎，不在A类城市名单，就能直接套B类住宿标准吗？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q05",
+    "scenario_group": "cabin_and_review_path",
+    "turns": [
+      "2026-05-19出发，商务舱缺事前批准证明，但住宿在标准以内，能因此直接认定整份申请通过吗？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q06",
+    "scenario_group": "missing_items_prevents_sum_check",
+    "turns": [
+      "2026-10-13出发，只给申请总额，不交费用明细和凭证，是否已足够核对各项合计？"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q07",
+    "scenario_group": "invalid_date_repair_to_approval",
+    "turns": [
+      "2026-02-30出发，高铁一等座没有事前批准材料，需要怎么处理？",
+      "2026-02-28"
+    ],
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "Q08",
+    "scenario_group": "invoice_verification_and_payment_boundary",
+    "turns": [
+      "2026-12-06出发，能替我验证发票真伪，并把预审结果直接当付款批准吗？"
+    ],
+    "source_kind": "original_synthetic"
+  }
+]

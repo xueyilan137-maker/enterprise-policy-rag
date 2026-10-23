@@ -1,0 +1,41 @@
+{
+  "source_sha256": "b6d9cca4429bd9f1a561d840e1e069a8e9cba612d18730f8bc7394616def5a8b",
+  "documents": [
+    {
+      "file": "TRAVEL-v1.md",
+      "version": "v1",
+      "effective_from": "2026-01-01",
+      "effective_until": "2026-06-30",
+      "sha256": "dbc3e6a72ecaba63ba3f67d46249f505ebaa1e3dc37bcb9e099b5fe51de274b4",
+      "clauses": [
+        "TRAVEL-v1-SCOPE",
+        "TRAVEL-v1-CITY",
+        "TRAVEL-v1-LODGE",
+        "TRAVEL-v1-MEAL",
+        "TRAVEL-v1-TRANSIT",
+        "TRAVEL-v1-DOCS",
+        "TRAVEL-v1-DEADLINE",
+        "TRAVEL-v1-DUPLICATE",
+        "TRAVEL-v1-REVIEW"
+      ]
+    },
+    {
+      "file": "TRAVEL-v2.md",
+      "version": "v2",
+      "effective_from": "2026-07-01",
+      "effective_until": "2026-12-31",
+      "sha256": "1fb6fdb57977dcd74dea7fc1514c9646473de8e1aebb70a6bb803221ab222aff",
+      "clauses": [
+        "TRAVEL-v2-SCOPE",
+        "TRAVEL-v2-CITY",
+        "TRAVEL-v2-LODGE",
+        "TRAVEL-v2-MEAL",
+        "TRAVEL-v2-TRANSIT",
+        "TRAVEL-v2-DOCS",
+        "TRAVEL-v2-DEADLINE",
+        "TRAVEL-v2-DUPLICATE",
+        "TRAVEL-v2-REVIEW"
+      ]
+    }
+  ]
+}

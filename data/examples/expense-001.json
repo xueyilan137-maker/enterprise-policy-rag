@@ -1,0 +1,31 @@
+{
+  "employee_id": "DEMO-001",
+  "employee_type": "ordinary",
+  "reason": "合成差旅示例",
+  "destination": "成都",
+  "destination_region": "CN-mainland",
+  "trip_start_date": "2026-08-01",
+  "trip_end_date": "2026-08-02",
+  "submitted_date": "2026-08-22",
+  "total_amount": "120.00",
+  "expense_items": [
+    {
+      "item_id": "0",
+      "category": "meal",
+      "amount": "60.00",
+      "expense_date": "2026-08-01",
+      "receipt_id": "SYN-0",
+      "receipt_present": true,
+      "meal_provided": false
+    },
+    {
+      "item_id": "1",
+      "category": "meal",
+      "amount": "60.00",
+      "expense_date": "2026-08-01",
+      "receipt_id": "SYN-1",
+      "receipt_present": true,
+      "meal_provided": false
+    }
+  ]
+}

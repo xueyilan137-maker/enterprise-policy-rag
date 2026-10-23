@@ -1,0 +1,26 @@
+services:
+  rules:
+    build:
+      context: ..
+      dockerfile: deploy/rules.Dockerfile
+    image: policy-rag-rules:0.1.0
+    env_file: ../.local/rules.env
+    ports:
+      - "127.0.0.1:18081:8000"
+    networks:
+      dify:
+        aliases: [policy-rules]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+networks:
+  dify:
+    external: true
+    name: policy-rag_default

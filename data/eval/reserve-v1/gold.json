@@ -1,0 +1,265 @@
+{
+  "Q01": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v1-TRANSIT",
+      "TRAVEL-v1-LODGE"
+    ],
+    "key_points": [
+      "二等座交通费用与住宿上限分开；不按住宿限额核定车票金额。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v1",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q02": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v2-MEAL",
+      "TRAVEL-v2-DOCS"
+    ],
+    "key_points": [
+      "已供餐日期不重复报该日餐费，需供餐说明；费用凭证缺失需补材料。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v2",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q03": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v1-LODGE",
+      "TRAVEL-v1-DEADLINE"
+    ],
+    "key_points": [
+      "按实际住宿夜数；行程结束后30个自然日，等于30天仍在期限内。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v1",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q04": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v2-CITY",
+      "TRAVEL-v2-SCOPE"
+    ],
+    "key_points": [
+      "不能；境外不在此境内制度范围，需人工判断。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v2",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q05": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v1-TRANSIT",
+      "TRAVEL-v1-REVIEW"
+    ],
+    "key_points": [
+      "商务舱仍需事前批准证明，缺失补材料并转人工；住宿合规不代表整份通过或批准付款。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v1",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q06": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v2-DOCS",
+      "TRAVEL-v2-DUPLICATE"
+    ],
+    "key_points": [
+      "不够，需明细和凭证；明细金额之和须与申请总额一致，不能凭总额声称已核对。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v2",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q07": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v1-TRANSIT"
+    ],
+    "key_points": [
+      "先要求有效完整开始日期；补日期后，一等座缺批准证明需补材料并转人工。"
+    ],
+    "first_turn_requires_clarification": true,
+    "final_policy_version": "v1",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "Q08": {
+    "kind": "qa",
+    "clause_ids": [
+      "TRAVEL-v2-DOCS",
+      "TRAVEL-v2-REVIEW"
+    ],
+    "key_points": [
+      "本系统不验证发票真伪，预审不是付款批准，财务独立复核，不执行付款。"
+    ],
+    "first_turn_requires_clarification": false,
+    "final_policy_version": "v2",
+    "prohibit": [
+      "自动批准或核定付款",
+      "伪造来源或跨版本依据"
+    ]
+  },
+  "A01": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v1",
+    "report_status": "no_issues_found",
+    "findings": [],
+    "item_sum": "1360.00",
+    "application_created": true
+  },
+  "A02": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v2",
+    "report_status": "needs_manual_review",
+    "findings": [
+      {
+        "code": "LODGING_OVER_LIMIT",
+        "item_ids": [
+          "A02-H"
+        ],
+        "clause_ids": [
+          "TRAVEL-v2-LODGE",
+          "TRAVEL-v2-REVIEW"
+        ]
+      }
+    ],
+    "item_sum": "1200.01",
+    "application_created": true
+  },
+  "A03": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v2",
+    "report_status": "needs_manual_review",
+    "findings": [
+      {
+        "code": "MISSING_PRIOR_APPROVAL",
+        "item_ids": [
+          "A03-T"
+        ],
+        "clause_ids": [
+          "TRAVEL-v2-TRANSIT"
+        ]
+      },
+      {
+        "code": "TRANSIT_REQUIRES_REVIEW",
+        "item_ids": [
+          "A03-T"
+        ],
+        "clause_ids": [
+          "TRAVEL-v2-TRANSIT",
+          "TRAVEL-v2-REVIEW"
+        ]
+      }
+    ],
+    "item_sum": "880.00",
+    "application_created": true
+  },
+  "A04": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v1",
+    "report_status": "needs_materials",
+    "findings": [
+      {
+        "code": "MISSING_RECEIPT",
+        "item_ids": [
+          "A04-T"
+        ],
+        "clause_ids": [
+          "TRAVEL-v1-DOCS"
+        ]
+      }
+    ],
+    "item_sum": "710.00",
+    "application_created": true
+  },
+  "A05": {
+    "kind": "material",
+    "validation_status": "needs_manual_review",
+    "required_issue_codes": [
+      "DATE_ORDER_CONFLICT"
+    ],
+    "application_created": false
+  },
+  "A06": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v2",
+    "report_status": "needs_manual_review",
+    "findings": [
+      {
+        "code": "SUSPECTED_DUPLICATE_RECEIPT",
+        "item_ids": [
+          "A06-T"
+        ],
+        "clause_ids": [
+          "TRAVEL-v2-DUPLICATE",
+          "TRAVEL-v2-REVIEW"
+        ]
+      },
+      {
+        "code": "SUSPECTED_DUPLICATE_RECEIPT",
+        "item_ids": [
+          "A06-M"
+        ],
+        "clause_ids": [
+          "TRAVEL-v2-DUPLICATE",
+          "TRAVEL-v2-REVIEW"
+        ]
+      }
+    ],
+    "item_sum": "270.00",
+    "application_created": true
+  },
+  "A07": {
+    "kind": "material",
+    "validation_status": "needs_materials",
+    "required_issue_codes": [
+      "MISSING_FIELD"
+    ],
+    "application_created": false
+  },
+  "A08": {
+    "kind": "material",
+    "validation_status": "needs_manual_review",
+    "required_issue_codes": [
+      "SOURCE_TOTAL_CONFLICT"
+    ],
+    "application_created": false
+  }
+}

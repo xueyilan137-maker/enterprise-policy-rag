@@ -1,0 +1,16 @@
+[
+  {
+    "id": "P01",
+    "scenario_group": "pilot_standard_rail",
+    "narrative": "# 原创合成申请 P01\n\n出发日期：2026-11-15。\n返程日期：2026-11-16。\n提交日期：2026-11-20。\n目的地：南京。\n事由：项目现场交接。\n申请总额：260.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nP01-T,transit,260.00,2026-11-15,SYN-P01-T,true,,,,,常州至南京,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  },
+  {
+    "id": "P02",
+    "scenario_group": "pilot_csv_date_gate",
+    "narrative": "# 原创合成申请 P02\n\n出发日期：2026-11-20。\n返程日期：2026-11-21。\n提交日期：2026-11-25。\n目的地：南昌。\n事由：项目现场交接。\n申请总额：220.00元。\n行程范围为中国大陆。\n",
+    "csv": "item_id,category,amount,expense_date,receipt_id,receipt_present,meal_provided,check_in,check_out,nights,route,seat_class,prior_approval_present\r\nP02-T,transit,220.00,2026-11-19,SYN-P02-T,true,,,,,九江至南昌,高铁二等座,\r\n",
+    "source_kind": "original_synthetic"
+  }
+]

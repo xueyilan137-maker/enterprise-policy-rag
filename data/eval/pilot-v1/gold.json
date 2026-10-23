@@ -1,0 +1,20 @@
+{
+  "P01": {
+    "kind": "material",
+    "validation_status": "validated",
+    "required_issue_codes": [],
+    "policy_version": "v2",
+    "report_status": "no_issues_found",
+    "findings": [],
+    "item_sum": "260.00",
+    "application_created": true
+  },
+  "P02": {
+    "kind": "material",
+    "validation_status": "needs_manual_review",
+    "required_issue_codes": [
+      "CSV_DATE_CONFLICT"
+    ],
+    "application_created": false
+  }
+}
